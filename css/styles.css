@@ -1,0 +1,68 @@
+:root {
+    --white: #fff;
+    --dark: #212121;
+    --primary: #ffc107;
+    --secondary: #0097a7;
+    --grey: #757575;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Krub", sans-serif;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 3.8rem;
+}
+
+.titulo span {
+    font-size: 2rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto; /* Es lo mismo que margin: top=0 right=auto bottom=0 left=auto*/
+}
+
+.nav-bg {
+    background-color: var(--secondary);
+}
+
+.navegacion-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 480px) {
+    .navegacion-principal {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion-principal a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
